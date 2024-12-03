@@ -171,19 +171,19 @@ public class ArrCharOps {
         for (int i = 0; i < Math.min(len1, len2); i++) {
             char ch1 = str1.charAt(i);
             char ch2 = str2.charAt(i);
-            if(ch1 < ch2){
+            
+            if (ch1 < ch2) {
                 return -1;
-            } 
-            else if (ch1 > ch2){
+            } else if (ch1 > ch2) {
                 return 1;
             }
         }
+    
         if (len1 < len2) {
-            return -1;  
+            return -1;
         } else if (len1 > len2) {
-            return 1;  
-        } 
-        return 0;
-}
-
+            return 1;
+        }
+        return 0; 
+    }
 }
