@@ -165,20 +165,20 @@ public class ArrCharOps {
         if (str1 == null || str2 == null) {
             return -2;  
         }
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
         int len1 = str1.length();
         int len2 = str2.length();
 
         for (int i = 0; i < Math.min(len1, len2); i++) {
             char ch1 = str1.charAt(i);
             char ch2 = str2.charAt(i);
-            
             if (ch1 < ch2) {
                 return -1;
             } else if (ch1 > ch2) {
                 return 1;
             }
         }
-    
         if (len1 < len2) {
             return -1;
         } else if (len1 > len2) {
