@@ -165,12 +165,8 @@ public class ArrCharOps {
         if (str1 == null || str2 == null) {
             return -2; 
         }
-        if (str1.length() == 0 || str2.length() == 0) {
-         
-            if (str1.length() == 0 && str2.length() == 0) {
-                return 0;
-            }
-            return str1.length() == 0 ? -1 : 1; 
+        if (str1.equals(str2)){
+            return 0;
         }
         int len1 = str1.length();
         int len2 = str2.length();
@@ -189,6 +185,6 @@ public class ArrCharOps {
         } else if (len1 > len2) {
             return 1; 
         }
-        return 0;
+        return -2;
     }
 }
