@@ -165,7 +165,7 @@ public class ArrCharOps {
       if(str1 == null || str2 == null){
         return -2;
       }  
-      if(str1 == str2){
+      if(str1.equals(str2)){
         return 0;
       }
       int len1 = str1.length();
