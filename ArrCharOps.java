@@ -162,9 +162,7 @@ public class ArrCharOps {
      *         return -2 if there is an error with the input.
      */
     public static int compareTo(String str1, String str2) {
-      if(str1 == null || str2 == null){
-        return -2;
-      }  
+
       if(str1.equals(str2)){
         return 0;
       }
@@ -190,6 +188,6 @@ public class ArrCharOps {
         if (len1 > len2) {
             return 1;
         }
-        return 0;
+        return -2;
     }  
 }
