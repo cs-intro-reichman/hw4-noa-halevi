@@ -190,6 +190,6 @@ public class ArrCharOps {
         if (len1 > len2) {
             return 1;
         }
-        return -2;
+        return 0;
     }  
 }
